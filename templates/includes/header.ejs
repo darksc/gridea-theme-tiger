@@ -1,0 +1,32 @@
+<div class="site-header">
+    <div class="header-content">
+        <h1 class="site-title">
+            <a href="<%= themeConfig.domain %>"><%= themeConfig.siteName %></a>
+        </h1>
+        <ul class="menu-container">
+            <% menus.forEach(function(menu) { %>
+                <% if (menu.openType === 'External') { %>
+                    <li>
+                        <a href="<%= menu.link %>" class="menu" target="_blank"><%= menu.name %></a>
+                    </li>
+                <% } else { %>
+                    <li>
+                        <a href="<%= menu.link %>" class="menu"><%= menu.name %></a>
+                    </li>
+                <% } %>
+            <% }) %>
+        </ul>
+    </div>
+
+
+    <p class="site-description"><%- themeConfig.siteDescription %></p>
+    <!--  <div class="social-container">-->
+    <!--    <% ['github', 'twitter', 'weibo', 'zhihu', 'facebook'].forEach((item) => { %>-->
+    <!--      <% if (site.customConfig[item]) { %>-->
+    <!--        <a href="<%= site.customConfig[item] %>" target="_blank">-->
+    <!--          <i class="fab fa-<%= item %>"></i>-->
+    <!--        </a>-->
+    <!--      <% } %>-->
+    <!--    <% }) %>-->
+    <!--  </div>-->
+</div>

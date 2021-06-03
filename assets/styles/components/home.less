@@ -1,0 +1,46 @@
+.post-container {
+  flex: 1;
+
+  .post {
+    padding-bottom: 32px;
+
+    a {
+      display: inline-block;
+    }
+
+    .post-title {
+      display: inline-block;
+      font-size: 3rem;
+      color: #333333;
+      transition: all 0.3s cubic-bezier(0.71, 0, 0, 0.99);
+      text-decoration: none;
+
+      &:hover {
+        box-shadow: inset 0 -0.8em 0 @main-color;
+      }
+    }
+
+    .post-info {
+      font-size: 1rem;
+      padding: 1rem 0;
+
+      .post-time {
+        color: @dark-gray;
+      }
+    }
+  }
+}
+
+
+.pagination-container {
+  padding: 24px 32px 32px;
+  overflow: hidden;
+
+  .prev-page {
+    float: left;
+  }
+
+  .next-page {
+    float: right;
+  }
+}
