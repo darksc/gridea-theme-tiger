@@ -26,6 +26,14 @@
       "value": "",
       "type": "input",
       "note": "从 LeanCloud 获取 AppKey"
+    },
+    {
+      "name": "ga",
+      "label": "跟踪 ID",
+      "group": "百度统计",
+      "value": "",
+      "type": "input",
+      "note": "从百度统计获取跟踪 ID"
     }
   ]
 }
