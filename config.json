@@ -2,5 +2,30 @@
   "name": "Tiger",
   "version": "0.1.0",
   "author": "Mars",
-  "customConfig": []
+  "customConfig": [
+    {
+      "name": "valineEnable",
+      "label": "是否启用",
+      "group": "Valine",
+      "value": false,
+      "type": "switch",
+      "note": ""
+    },
+    {
+      "name": "valineID",
+      "label": "AppID",
+      "group": "Valine",
+      "value": "",
+      "type": "input",
+      "note": "从 LeanCloud 获取 AppID"
+    },
+    {
+      "name": "valineKey",
+      "label": "AppKey",
+      "group": "Valine",
+      "value": "",
+      "type": "input",
+      "note": "从 LeanCloud 获取 AppKey"
+    }
+  ]
 }

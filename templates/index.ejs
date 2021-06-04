@@ -15,8 +15,22 @@
             </article>
         </div>
 
+        <% if (site.customConfig.valineEnable) { %>
+            <div id="vcomments"></div>
+        <% } %>
+
         <%- include('./includes/footer') %>
     </div>
+
+    <% if (site.customConfig.valineEnable) { %>
+        <script>
+          new Valine({
+            el: '#vcomments',
+            appId: '<%= site.customConfig.valineID %>',
+            appKey: '<%= site.customConfig.valineKey %>'
+          })
+        </script>
+    <% } %>
 </div>
 </body>
 </html>

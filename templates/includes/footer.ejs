@@ -1,5 +1,9 @@
 <div class="site-footer">
-  <%- themeConfig.footerInfo %>
+    <% if (themeConfig.footerInfo) { %>
+        <%- themeConfig.footerInfo %>
+    <% } else { %>
+        Design By <a href="https://darksc.github.io/" target="_blank">Mars</a> · Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    <% } %>
 </div>
 
 <script>
